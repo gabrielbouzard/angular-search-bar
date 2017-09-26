@@ -1,0 +1,8 @@
+<div class="ui input">
+  <input type="text" placeholder="Enter first & last name" #search>
+</div>
+<button (click)="search(search)" class="ui positive button">Search</button>
+<ul>
+  <li *ngFor="let name of names">{{ name }}</li>
+</ul>
+
